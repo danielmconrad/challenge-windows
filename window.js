@@ -25,8 +25,17 @@ module.exports = class Window {
   }
 
   getVisibleRectangles () {
-    // const window = this.windows[index];
-    // const windowsInFront = this.windows.splice(0, index);
+    return [
+      {x: 2, y: 2, width: 500, height: 18},
+      {x: 2, y: 20, width: 48, height: 30},
+      {x: 2, y: 50, width: 28, height: 252}
+    ];
+  }
+
+  getVisibleArea () {
+    return this.getVisibleRectangles().reduce(function (val, rectangle) {
+      return val + rectangle.width * rectangle.height;
+    }, 0);
   }
 
 };

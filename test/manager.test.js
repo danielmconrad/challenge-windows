@@ -1,5 +1,6 @@
 const Given = require('given');
 const expect = require('chai').expect;
+const rawWindows = require('./fixtures/windows').windows;
 
 const WindowManager = require('../manager');
 const Window = require('../window');
@@ -9,32 +10,8 @@ describe('WindowManager', function () {
     this.given = Given(this);
 
     this.given({
-      windowIndex: function () { return 0 },
-      rawWindows: function () {
-        return [
-          {
-            id: 'first',
-            x: 100,
-            y: 50,
-            width: 1000,
-            height: 300,
-          },
-          {
-            id: 'second',
-            x: 900,
-            y: 200,
-            width: 50,
-            height: 600,
-          },
-          {
-            id: 'third',
-            x: 50,
-            y: 20,
-            width: 500,
-            height: 500,
-          },
-        ];
-      },
+      windowIndex: () => 0,
+      rawWindows: () => rawWindows,
       windowManager: function () {
         let windows = this.rawWindows.map(rawWindow => new Window(rawWindow));
         return new WindowManager(windows);
