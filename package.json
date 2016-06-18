@@ -1,0 +1,28 @@
+{
+  "name": "challenge-windows",
+  "version": "0.0.1",
+  "description": "Simple Window Ordering Challenge",
+  "main": "manager.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "given": "^1.0.1",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danmconrad/challenge-windows.git"
+  },
+  "author": "Dan Conrad <dan.m.conrad@gmail.com> (http://www.danmconrad.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danmconrad/challenge-windows/issues"
+  },
+  "homepage": "https://github.com/danmconrad/challenge-windows#readme",
+  "engines": {
+    "node": ">=6.1.0"
+  }
+}
