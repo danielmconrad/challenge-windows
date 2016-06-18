@@ -1,6 +1,6 @@
 const Given = require('given');
 const expect = require('chai').expect;
-const rawWindows = require('./fixtures/windows').windows;
+const rawWindows = require('./fixtures/windows-cornered').windows;
 
 const WindowManager = require('../manager');
 const Window = require('../window');
